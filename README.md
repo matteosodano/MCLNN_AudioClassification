@@ -4,7 +4,7 @@ University Project that concerns the design of a Masked Conditional Neural Netwo
 ## Masked Conditional Neural Network
 The MCLNN allows to consider the temporal dimension of data inferring on a window of frames. Each frame is conditioned on n preceeding and n succeeding frames (i.e., the window has width <img src="https://render.githubusercontent.com/render/math?math=d = 2n %2B 1">
 ). The mask is a binary matrix that enforces a sparsness, so that each hidden unit belonging to the network processes only a limited part of the data. It is characterized by two parameters: the bandwidth (number of consecutive ones in a given column) and overlap (number of overlapping ones in two adjacent columns). This 
-![xd](https://camo.githubusercontent.com/e495380dbec9406294b86a72544581ea8a8ae002/68747470733a2f2f6965656578706c6f72652e696565652e6f72672f6d6564696173746f72655f6e65772f494545452f636f6e74656e742f6d656469612f383231313030322f383231353436322f383231353538382f383231353538382d6669672d332d736f757263652d6c617267652e676966 | width=100)
+![xd](https://camo.githubusercontent.com/e495380dbec9406294b86a72544581ea8a8ae002/68747470733a2f2f6965656578706c6f72652e696565652e6f72672f6d6564696173746f72655f6e65772f494545452f636f6e74656e742f6d656469612f383231313030322f383231353436322f383231353538382f383231353538382d6669672d332d736f757263652d6c617267652e676966 =250x250)
 
 ## Implementation
 The code has been written and run in Google Colaboratory. It performs a feature extraction that builds spectrograms from the audio files by segmenting the data, performing the Fast Fourier Transform, re-connecting the segments.
