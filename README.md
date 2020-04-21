@@ -6,7 +6,8 @@ The MCLNN allows to consider the temporal dimension of data inferring on a windo
 ). The mask is a binary matrix that enforces a sparsness, so that each hidden unit belonging to the network processes only a limited part of the data.
 
 ## Implementation
-The code has been written and run in Google Colaboratory. It performs a feature extraction that builds spectrograms from the audio files by segmenting the data, performing the Fast Fourier Transform, re-connecting the segments.
+The code has been written and run in Google Colaboratory. It performs a feature extraction that builds spectrograms from the audio files by segmenting the data, performing the Fast Fourier Transform, re-connecting the segments. \\
+
 A spectrogram is a graphical representation of the intensity of a sound as a function of time. Over the x-axis there is the time, and over the y-axis the frequency (linear or logarithmic scale). Each point of the plane has a color that represents the intensity of the sound in the given instant of time.
 
 ## Reference
