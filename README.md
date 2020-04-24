@@ -2,7 +2,7 @@
 University Project that concerns the design of a Masked Conditional Neural Network for Audio Classification.
 
 ## Pre-requisites
--Python (version 2.7.11) environment and packages:
+Python (version 2.7.11) environment and packages:
 - keras 2.2.4
 - tensorflow_gpu 1.12.0
 - tensorflow 1.14.0
