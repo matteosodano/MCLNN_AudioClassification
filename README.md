@@ -1,6 +1,19 @@
 # MCLNN_AudioClassification
 University Project that concerns the design of a Masked Conditional Neural Network for Audio Classification.
 
+## Pre-requisites
+-Python (version 2.7.11) environment and packages:
+- keras 2.2.4
+- tensorflow_gpu 1.12.0
+- tensorflow 1.14.0
+- scipy 1.2.0
+- scikit_learn 0.21.2
+- scipy 1.0.1
+- h5py 2.9.0
+- matplotlib 3.0.2
+- scikit_learn 0.19.2
+- numpy 1.16.1
+
 ## Masked Conditional Neural Network
 The MCLNN allows to consider the temporal dimension of data inferring on a window of frames. Each frame is conditioned on n preceeding and n succeeding frames (i.e., the window has width <img src="https://render.githubusercontent.com/render/math?math=d = 2n %2B 1">
 ). The mask is a binary matrix that enforces a sparsness, so that each hidden unit belonging to the network processes only a limited part of the data. It is characterized by two parameters: the bandwidth (number of consecutive ones in a given column) and overlap (number of overlapping ones in two adjacent columns).
