@@ -40,6 +40,10 @@ The used network is characterized by two masked layers, a dense layer and a soft
 
 Two musical datasets are used: [GTZAN](http://marsyas.info/downloads/datasets.html) and [ISMIR2004](http://ismir2004.ismir.net/genre_contest/). GTZAN audio tracks are collected from a variety of sources including CDs, radio, microphone recordings, in order to represent a variety of recording conditions. It consists of 1000 audio tracks each 30 seconds long. It contains 10 genres, each represented by 100 tracks (i.e., it is balanced). ISMIR2004 contains the audio tracks from 8 genres: classical, electronic, jazz and blues, metal, punk, rock, pop, world. For the genre recognition contest, data were grouped into 6 heavily unbalanced classes: classical (640 samples), electronic (229 samples), jazz-blues (52 samples), metal-punk (90 samples), rock-pop (203 samples), world (244 samples), where in some cases two genres were merged into a single class. The total size of the data-set is 1458 tracks. They were characterized by different lengths: therefore, 30 s segments are extracted.
 
+## Main Results
+GTZAN 80% accuracy
+ISMIR2004 78% F1-score
+
 ## Reference and Credits
 Medhat, F., Chesmore, D. & Robinson, J. (2017). Masked Conditional Neural Networks for Audio Classification.. In A. Lintas, S. Rovetta, P. F. M. J. Verschure & A. E. P. Villa (eds.), *ICANN (2)* (p./pp. 349-358), : Springer. ISBN: 978-3-319-68612-7 
 
