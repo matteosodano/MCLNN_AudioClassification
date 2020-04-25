@@ -1,19 +1,6 @@
 # MCLNN_AudioClassification
 University Project that concerns the design of a Masked Conditional Neural Network for Audio Classification. The code was written in Google Colaboratory and exported as Python code: imports and related changes may be needed to run it.
 
-## Requisites
-Python (version 2.7.11) environment and packages:
-- keras 2.2.4
-- tensorflow_gpu 1.12.0
-- tensorflow 1.14.0
-- scipy 1.2.0
-- scikit_learn 0.21.2
-- scipy 1.0.1
-- h5py 2.9.0
-- matplotlib 3.0.2
-- scikit_learn 0.19.2
-- numpy 1.16.1
-
 ## Masked Conditional Neural Network
 The MCLNN allows to consider the temporal dimension of data inferring on a window of frames. Each frame is conditioned on n preceeding and n succeeding frames (i.e., the window has width <img src="https://render.githubusercontent.com/render/math?math=d = 2n %2B 1">
 ). 
@@ -40,9 +27,28 @@ The used network is characterized by two masked layers, a dense layer and a soft
 
 Two musical datasets are used: [GTZAN](http://marsyas.info/downloads/datasets.html) and [ISMIR2004](http://ismir2004.ismir.net/genre_contest/). GTZAN audio tracks are collected from a variety of sources including CDs, radio, microphone recordings, in order to represent a variety of recording conditions. It consists of 1000 audio tracks each 30 seconds long. It contains 10 genres, each represented by 100 tracks (i.e., it is balanced). ISMIR2004 contains the audio tracks from 8 genres: classical, electronic, jazz and blues, metal, punk, rock, pop, world. For the genre recognition contest, data were grouped into 6 heavily unbalanced classes: classical (640 samples), electronic (229 samples), jazz-blues (52 samples), metal-punk (90 samples), rock-pop (203 samples), world (244 samples), where in some cases two genres were merged into a single class. The total size of the data-set is 1458 tracks. They were characterized by different lengths: therefore, 30 s segments are extracted.
 
-## Main Results
-GTZAN 80% accuracy
-ISMIR2004 78% F1-score
+## Execution Requirements
+Python (version 2.7.11) environment and packages:
+- keras 2.2.4
+- tensorflow_gpu 1.12.0
+- tensorflow 1.14.0
+- scipy 1.2.0
+- scikit_learn 0.21.2
+- scipy 1.0.1
+- h5py 2.9.0
+- matplotlib 3.0.2
+- scikit_learn 0.19.2
+- numpy 1.16.1
+
+
+
+The MCLNN code requires two .hdf5 files, one containing the samples and another of the indices.
+
+*Dataset.hdf5*
+A single file containing the intermediate representation (i.e. the spectrograms) of all the files of a dataset. Samples are the transformation of the complete clips.
+
+*Index.hdf5*
+These are 3 files: training, testing and validation. Each of the indices files hold the indices of the samples following their location in the Samples.hdf5. These files can be generated as many times as the number of cross-validation operation.
 
 ## Reference and Credits
 Medhat, F., Chesmore, D. & Robinson, J. (2017). Masked Conditional Neural Networks for Audio Classification.. In A. Lintas, S. Rovetta, P. F. M. J. Verschure & A. E. P. Villa (eds.), *ICANN (2)* (p./pp. 349-358), : Springer. ISBN: 978-3-319-68612-7 
