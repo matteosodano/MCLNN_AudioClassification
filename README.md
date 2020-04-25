@@ -40,15 +40,11 @@ Python (version 2.7.11) environment and packages:
 - scikit_learn 0.19.2
 - numpy 1.16.1
 
+Moreover, the MCLNN code requires two .hdf5 files, one containing the samples and another of the indices.
 
+*Dataset.hdf5*: a single file containing the intermediate representation (i.e. the spectrograms) of all the files of a dataset. Samples are the transformation of the complete clips.
 
-The MCLNN code requires two .hdf5 files, one containing the samples and another of the indices.
-
-*Dataset.hdf5*
-A single file containing the intermediate representation (i.e. the spectrograms) of all the files of a dataset. Samples are the transformation of the complete clips.
-
-*Index.hdf5*
-These are 3 files: training, testing and validation. Each of the indices files hold the indices of the samples following their location in the Samples.hdf5. These files can be generated as many times as the number of cross-validation operation.
+*Index.hdf5*: these are 3 files: training, testing and validation. Each of the indices files hold the indices of the samples following their location in the Samples.hdf5. These files can be generated as many times as the number of cross-validation operation.
 
 ## Reference and Credits
 Medhat, F., Chesmore, D. & Robinson, J. (2017). Masked Conditional Neural Networks for Audio Classification.. In A. Lintas, S. Rovetta, P. F. M. J. Verschure & A. E. P. Villa (eds.), *ICANN (2)* (p./pp. 349-358), : Springer. ISBN: 978-3-319-68612-7 
