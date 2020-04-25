@@ -22,6 +22,7 @@ The MCLNN allows to consider the temporal dimension of data inferring on a windo
 <img src="https://camo.githubusercontent.com/e495380dbec9406294b86a72544581ea8a8ae002/68747470733a2f2f6965656578706c6f72652e696565652e6f72672f6d6564696173746f72655f6e65772f494545452f636f6e74656e742f6d656469612f383231313030322f383231353436322f383231353538382f383231353538382d6669672d332d736f757263652d6c617267652e676966" width="400">
 </p>
 
+The binary mask is enforced through a redefinition of the weight matrix as W <-- W * M (where * indicates the element-wise product), so that only some entries are actually processed.
 
 ## Implementation
 The code has been written and run in Google Colaboratory. It performs a feature extraction that builds spectrograms from the audio files by segmenting the data, performing the Fast Fourier Transform, re-connecting the segments.
