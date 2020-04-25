@@ -46,6 +46,8 @@ Moreover, the MCLNN code requires two .hdf5 files, one containing the samples an
 
 *Index.hdf5*: these are 3 files: training, testing and validation. Each of the indices files hold the indices of the samples following their location in the Samples.hdf5. These files can be generated as many times as the number of cross-validation operation.
 
+Therefore, first we need to run the Index Generator module, then the Dataset Transformation module, and finally the Main.
+
 ## Reference and Credits
 Medhat, F., Chesmore, D. & Robinson, J. (2017). Masked Conditional Neural Networks for Audio Classification.. In A. Lintas, S. Rovetta, P. F. M. J. Verschure & A. E. P. Villa (eds.), *ICANN (2)* (p./pp. 349-358), : Springer. ISBN: 978-3-319-68612-7 
 
