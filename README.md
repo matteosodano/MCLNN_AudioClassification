@@ -24,7 +24,7 @@ The MCLNN allows to consider the temporal dimension of data inferring on a windo
 
 The mask is a binary matrix that enforces a sparsness, so that each hidden unit belonging to the network processes only a limited part of the data. It is characterized by two parameters: the bandwidth (number of consecutive ones in a given column) and overlap (number of overlapping ones in two adjacent columns). The bandwidth indicates, for each neuron, which are the part of data to be processed; the overlap indicates the parts of data that are processed by two consecutive neurons.
 <p align="center">
-<img src="https://camo.githubusercontent.com/493fa05246198d91d95552b56a58e46b107959b3/68747470733a2f2f6965656578706c6f72652e696565652e6f72672f6d6564696173746f72655f6e65772f494545452f636f6e74656e742f6d656469612f383231313030322f383231353436322f383231353538382f383231353538382d6669672d342d736f757263652d6c617267652e676966" width="500">
+<img src="https://camo.githubusercontent.com/493fa05246198d91d95552b56a58e46b107959b3/68747470733a2f2f6965656578706c6f72652e696565652e6f72672f6d6564696173746f72655f6e65772f494545452f636f6e74656e742f6d656469612f383231313030322f383231353436322f383231353538382f383231353538382d6669672d342d736f757263652d6c617267652e676966" width="600">
 </p>
 
 The binary mask is enforced through a redefinition of the weight matrix as W <-- W * M (where * indicates the element-wise product), so that only some entries are actually processed.
