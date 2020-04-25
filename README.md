@@ -1,7 +1,7 @@
 # MCLNN_AudioClassification
-University Project that concerns the design of a Masked Conditional Neural Network for Audio Classification.
+University Project that concerns the design of a Masked Conditional Neural Network for Audio Classification. The code was written in Google Colaboratory and exported as Python code: imports and related changes may be needed to run it.
 
-## Pre-requisites
+## Requisites
 Python (version 2.7.11) environment and packages:
 - keras 2.2.4
 - tensorflow_gpu 1.12.0
