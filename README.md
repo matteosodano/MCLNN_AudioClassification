@@ -14,7 +14,7 @@ The mask is a binary matrix that enforces a sparsness, so that each hidden unit 
 <img src="https://camo.githubusercontent.com/493fa05246198d91d95552b56a58e46b107959b3/68747470733a2f2f6965656578706c6f72652e696565652e6f72672f6d6564696173746f72655f6e65772f494545452f636f6e74656e742f6d656469612f383231313030322f383231353436322f383231353538382f383231353538382d6669672d342d736f757263652d6c617267652e676966" width="600">
 </p>
 
-The binary mask is enforced through a redefinition of the weight matrix as W <-- W * M (where * indicates the element-wise product), so that only some entries are actually processed.
+The binary mask is enforced through a redefinition of the weight matrix as W ← W * M (where * indicates the element-wise product), so that only some entries are actually processed.
 
 ## Implementation
 The code has been written and run in Google Colaboratory. It performs a feature extraction that builds spectrograms from the audio files by segmenting the data, performing the Fast Fourier Transform, re-connecting the segments.
