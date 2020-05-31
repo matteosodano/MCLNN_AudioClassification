@@ -1,4 +1,9 @@
 # MCLNN_AudioClassification
+Developed by: M. Sodano, S. Frontera (2020).
+
+Supervisors: prof. A. Uncini, prof. D. Comminiello.
+
+
 University Project that concerns the design of a Masked Conditional Neural Network for Audio Classification. The code was written in Google Colaboratory and exported as Python code: imports and related changes may be needed to run it.
 
 ## Masked Conditional Neural Network
