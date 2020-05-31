@@ -1,4 +1,4 @@
-# MCLNN_AudioClassification
+# Masked Conditional Neural Networks for Audio Classification
 Developed by: M. Sodano, S. Frontera (2020).
 
 Supervisors: prof. A. Uncini, prof. D. Comminiello.
