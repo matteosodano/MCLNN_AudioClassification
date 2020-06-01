@@ -3,7 +3,8 @@ Developed by: M. Sodano, S. Frontera (2020).
 
 Supervisors: prof. A. Uncini, prof. D. Comminiello.
 
-Achievement: Neural Networks exam.
+Achievement: Neural Networks exam./
+<br>
 
 
 
